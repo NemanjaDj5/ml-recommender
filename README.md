@@ -1,4 +1,12 @@
 # 🎬 Content-Based Movie Recommender
+![Python](https://img.shields.io/badge/Python-3.11-blue?logo=python&logoColor=white)
+![Polars](https://img.shields.io/badge/Polars-1.32-orange?logo=polars&logoColor=white)
+![Scikit-learn](https://img.shields.io/badge/scikit--learn-1.7-F7931E?logo=scikit-learn&logoColor=white)
+![FastAPI](https://img.shields.io/badge/FastAPI-0.135-009688?logo=fastapi&logoColor=white)
+![Streamlit](https://img.shields.io/badge/Streamlit-1.55-FF4B4B?logo=streamlit&logoColor=white)
+![Docker](https://img.shields.io/badge/Docker-ready-2496ED?logo=docker&logoColor=white)
+![Kubernetes](https://img.shields.io/badge/Kubernetes-job-326CE5?logo=kubernetes&logoColor=white)
+![License](https://img.shields.io/badge/License-MIT-green)
 
 A production-style **content-based recommendation system** built using **TF-IDF + dimensionality reduction (SVD)**.  
 The project demonstrates the full ML workflow:
