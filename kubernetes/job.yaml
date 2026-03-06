@@ -1,0 +1,27 @@
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: recommender-train
+spec:
+  backoffLimit: 1
+  template:
+    spec:
+      restartPolicy: Never
+      containers:
+        - name: recommender-trainer
+          image: recommender:1.0.0
+          imagePullPolicy: IfNotPresent
+          # Optional: mount volumes if you want to persist outputs
+          # volumeMounts:
+          #   - name: outputs
+          #     mountPath: /recommender_app/reports
+          #   - name: outputs
+          #     mountPath: /recommender_app/modeling/models
+      # Optional:
+      # volumes:
+      #   - name: outputs
+      #     persistentVolumeClaim:
+      #       claimName: YOUR_PVC_NAME
+      # Optional: only if your cluster needs registry auth
+      # imagePullSecrets:
+      #   - name: YOUR_IMAGE_PULL_SECRET

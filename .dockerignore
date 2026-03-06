@@ -1,0 +1,6 @@
+reports/
+__pycache__/
+.venv/
+.gitignore
+*.ipynb
+eda_analysis

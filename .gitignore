@@ -1,0 +1,32 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Environments
+.venv/
+venv/
+ENV/
+env/
+
+# Data
+data/datasets/raw
+
+# IDE
+.vscode/
+.idea/
+
+# Notebooks
+.ipynb_checkpoints/
+
+# OS
+.DS_Store
+__MACOSX/
+
+# Logs / outputs
+*.log
+reports/
+
+# Model artifacts (recommended)
+modeling/models/*.joblib
