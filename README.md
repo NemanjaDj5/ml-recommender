@@ -1,5 +1,5 @@
 # 🎬 Content-Based Movie Recommender
-![Python](https://img.shields.io/badge/Python-3.11-blue?logo=python&logoColor=white)
+![Python](https://img.shields.io/badge/Python-3.13-blue?logo=python&logoColor=white)
 ![Polars](https://img.shields.io/badge/Polars-1.32-orange?logo=polars&logoColor=white)
 ![Scikit-learn](https://img.shields.io/badge/scikit--learn-1.7-F7931E?logo=scikit-learn&logoColor=white)
 ![FastAPI](https://img.shields.io/badge/FastAPI-0.135-009688?logo=fastapi&logoColor=white)
@@ -21,7 +21,23 @@ The project demonstrates the full ML workflow:
 The system recommends movies based on **user preferences and movie metadata**.
 
 ---
+## Quick Start
+```bash
+# 1. Clone and install
+pip install -r requirements.txt
 
+# 2. Download MovieLens dataset into datasets/raw/
+
+# 3. Train the model
+python -m main.main_train
+
+# 4. Start the API
+uvicorn api.app:app --reload
+
+# 5. Launch the demo
+streamlit run demo/streamlit_app.py
+```
+---
 # Architecture
 
 ![Architecture Diagram](docs/architecture_recommender.png)
